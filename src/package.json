@@ -1,0 +1,17 @@
+{
+  "name": "monochrome-memory-chrome-extension-settings-library",
+  "version": "1.0.0",
+  "description": "汎用的な設定画面を提供するコンポーネント",
+  "main": "src/components/Settings.svelte",
+  "type": "module",
+  "files": [
+    "src/components",
+    "src/utils"
+  ],
+  "keywords": ["svelte", "settings", "chrome-extension", "library"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "svelte": "^3.0.0"
+  }
+}
