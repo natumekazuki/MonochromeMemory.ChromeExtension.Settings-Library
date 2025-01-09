@@ -1,4 +1,4 @@
-# MonochromeMemory Chrome Extension Settings
+# MonochromeMemory Chrome Extension Settings Library
 
 A reusable Svelte-based settings library designed for Chrome extensions and other projects. This library provides a dynamic settings UI and integrates with Chrome's `chrome.storage.sync` API for data persistence.
 
