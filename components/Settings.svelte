@@ -25,8 +25,8 @@
     });
 
     // 初期値をストレージに保存
-    await saveSettings(storedSettings);
     settings = storedSettings;
+    await saveSettings(settings);
   });
 
   const updateSetting = async (key, value) => {

@@ -1,15 +1,23 @@
-export const getSettings = async (keys) => {
-  return new Promise((resolve) => {
+export const getSettings = (keys) => {
+  return new Promise((resolve, reject) => {
     chrome.storage.sync.get(keys, (result) => {
-      resolve(result);
+      if (chrome.runtime.lastError) {
+        reject(chrome.runtime.lastError);
+      } else {
+        resolve(result);
+      }
     });
   });
 };
 
-export const saveSettings = async (data) => {
-  return new Promise((resolve) => {
+export const saveSettings = (data) => {
+  return new Promise((resolve, reject) => {
     chrome.storage.sync.set(data, () => {
-      resolve();
+      if (chrome.runtime.lastError) {
+        reject(chrome.runtime.lastError);
+      } else {
+        resolve();
+      }
     });
   });
 };
